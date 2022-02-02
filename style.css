@@ -50,3 +50,17 @@
 .vertical.move2 {
     background-position: -125px -23px;
 }
+.fall.left {
+    background-position: -73px -107px;
+}
+.fall.top {
+    background-position: -93px -107px;
+}
+
+.fall.right {
+    background-position: -113px -107px;
+}
+
+.fall.bottom {
+    background-position: -132px -107px;
+}
