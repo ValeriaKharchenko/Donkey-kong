@@ -17,21 +17,21 @@ export const animate = () => {
         if (e.code === 'ArrowLeft') plumber.left = true;
         if (e.code === 'ArrowUp') plumber.up = true;
         if (e.code === 'ArrowDown') plumber.down = true;
-    })
+    });
+
     document.addEventListener('keyup', function (e) {
         plumber.moving = false;
         if (e.code === 'ArrowRight') plumber.right = false;
         if (e.code === 'ArrowLeft') plumber.left = false;
         if (e.code === 'ArrowUp') plumber.up = false;
         if (e.code === 'ArrowDown') plumber.down = false;
-
-    })
+    });
     let i = 0;
     setInterval(() => {
-        plumber.classList.remove(...moves)
+        plumber.classList.remove(...moves);
         if (plumber.moving) {
-            plumber.classList.add(moves[i % moves.length])
-            i++
+            plumber.classList.add(moves[i % moves.length]);
+            i++;
         } else {
             i = 0;
         }
